@@ -29,10 +29,33 @@ class auto:
             return "Ya estoy usado"
         else:
             return "¡Ya déjame descansar por favor!"
+    
+    @staticmethod
+    def comparar_km(auto1,auto2):
+        if auto1.kilometraje == auto2.kilometraje:
+            return "Tienen el mismo kilometraje"
+        else:
+            return "Tienen diferente Kilometraje"
+        
+    @staticmethod
+    def comparar_anio(auto1,auto2):
+        if auto1.anio == auto2.anio:
+            return "Son del mismo año"
+        else:
+            return "Son de distindo año"
 
-carro_Alejandro = auto("KIA","EV5",2025)
 
-print(carro_Alejandro.mostrar_informacion())
-print(carro_Alejandro.actualizar_kilometraje(5000))
-print(carro_Alejandro.realizar_viaje(10000))
-print(carro_Alejandro.estado_auto())
+    @classmethod
+    def toyota_auto (cls):
+        marca = "Toyota"
+        modelo = "RAV4"
+        anio = 2025
+        return cls(marca,modelo,anio)
+    
+    @classmethod
+    def KIA_auto (cls, modelo):
+        marca = "KIA"
+        anio = 2026
+        return cls(marca,modelo,anio)
+
+

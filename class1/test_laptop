@@ -1,0 +1,23 @@
+from laptop import lapto
+from laptop_gaming import Laptop_Gaming
+from laptop_business import Laptop_Business
+
+laptop_pepito = lapto("Lenovo","i7",32)
+laptop_maria = lapto("Lenovo","i7",32,600)
+
+laptop_juanito = Laptop_Gaming("MSI","I7",4 , "RTX 8GB")
+
+laptop_empresa = Laptop_Business("MSI","I7",4 , 500, "8 HORAS")
+print(laptop_empresa.realizar_diagnostico_sistema())
+
+#print(laptop_juanito.__dict__)
+
+#print(laptop_juanito.realizar_diagnostico_sistema())
+
+#for numero in range(1,2):
+  #  asus_laptop = lapto.asus_laptop(numero)
+  #  print(asus_laptop.__dict__)
+
+
+#print(lapto.comparar_costo(laptop_pepito,laptop_maria))
+
